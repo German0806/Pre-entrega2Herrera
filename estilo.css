@@ -1,5 +1,11 @@
+:root {
+  --primary-color: #ff69b4;
+  --secondary-color: #ffc0cb;
+  --link-color: #ff1493;
+}
+
 header {
-  background-color: #ffc0cb;
+  background-color: var(--secondary-color);
   padding: 20px;
   text-align: center;
 }
@@ -20,10 +26,8 @@ header {
   height: 100vh;
 }
 
-
 .header {
   background-color: rgba(255, 192, 203, 0.7);
-
 }
 
 .parallax-content {
@@ -43,7 +47,6 @@ header {
   transform: scale(1.2);
 }
 
-
 .grid-item {
   width: 100%;
   height: 0;
@@ -59,9 +62,10 @@ header {
   object-fit: cover;
 }
 
-h1,
-h2 {
-  color: #ff69b4;
+h1, h2 {
+  color: var(--primary-color);
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
 }
 
 p {
@@ -70,12 +74,11 @@ p {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  /* Puedes ajustar el valor según tus preferencias. */
 }
 
 form {
-  border: 2px solid #ff69b4;
-  color: #ff69b4;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 nav ul {
@@ -90,10 +93,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ff1493;
+  color: var(--link-color);
 }
-
-
 
 footer {
   background-color: #f1506b;
@@ -102,10 +103,15 @@ footer {
 }
 
 iframe {
-  border: 1px solid #ff69b4;
+  border: 1px solid var(--primary-color);
+}
+
+.texto-bloque {
+  column-count: 2; /* Divide el texto en dos columnas */
+  column-gap: 20px; /* Espacio entre las columnas */
 }
 
 nav ul li a:hover {
-  color: #ff1493;
+  color: var(--link-color);
   font-weight: bold;
 }
